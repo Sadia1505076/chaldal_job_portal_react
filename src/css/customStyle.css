@@ -1,0 +1,310 @@
+a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+body {
+  font-size: 18px !important;
+}
+.navbar {
+  background-color: black !important;
+}
+.nav-a {
+  font-size: 19px;
+  cursor: pointer !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.nav-container {
+  padding: 20px !important;
+}
+#introduction {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../img/hexagons.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  border-radius: 0 0 70% 70% / 0 0 30% 30%;
+}
+#introduction .container {
+  height: 430px;
+  text-align: center;
+  font-family: -webkit-body;
+  /* line-height: 0.8; */
+}
+#introduction .inner-intro {
+  padding-top: 170px;
+}
+#introduction .container h2 {
+  font-size: 80px;
+}
+#introduction .container .intro-des {
+  font-size: 27px;
+}
+#introduction .container .btn {
+  padding: 5px;
+  color: white;
+  border-color: white;
+  font-size: 16px;
+}
+#intro-btn {
+  padding-top: 10px;
+}
+
+/*----------------------------------about us ---------------------------------------*/
+.section-header {
+  text-align: center;
+}
+/*------------------------------------------ work -------------------------------------*/
+.work-item {
+  background-color: #1e2127;
+  border-radius: 10px;
+  max-width: 340px;
+  height: 425px;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.work-des {
+  text-align: center;
+  line-height: 0.9;
+}
+.work-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.wrok-p {
+  font-size: 17px;
+  opacity: 0;
+}
+.inner-work-item {
+  text-align: center;
+}
+.inner-work-item img,
+.wrok-p {
+  transition: all 0.5s ease-in-out;
+}
+.active-work-item img {
+  width: 30%;
+}
+.active-work-item .wrok-p {
+  opacity: 1;
+}
+.active-work-item {
+  text-align: center;
+}
+
+/*------------------------------------- career ----------------------------------------*/
+.career-item-header {
+  border: thin solid #434857;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 0.75rem 1.25rem;
+}
+.flex-container-link {
+  /* text-decoration: none; */
+  display: flex;
+  justify-content: space-between;
+  color: #cfd2da;
+  align-items: center;
+}
+.flex-container-link:hover,
+.career-item-header:hover {
+  background-color: #434857;
+  text-decoration: none;
+  color: #cfd2da;
+  cursor: pointer;
+}
+.title {
+  font-size: 18px;
+}
+.description {
+  text-align: right;
+}
+
+.career-item-body {
+  border: solid thin #434857;
+  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.active-career-item .career-item-header {
+  background-color: #434857;
+}
+.active-career-item .career-item-body {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  max-height: 950px;
+  opacity: 1;
+  overflow: auto;
+}
+.career-item-header:active {
+  background-color: white;
+  color: black;
+}
+.flex-container-link:active {
+  background-color: white;
+  color: black;
+}
+
+/*--------------------------- social medias -----------------------*/
+.social-media {
+  font-size: 40px;
+}
+.social-link {
+  margin-right: 10px !important;
+  margin-left: 0px !important;
+}
+
+/*---------------------------- footer ----------------------------------*/
+#bottom-links {
+  padding: 15px;
+}
+#footer {
+  background: #1a1c22;
+  font-size: 13px;
+}
+
+#footer .nav li a {
+  color: #1997c6;
+}
+
+#footer .nav li a:hover {
+  color: white;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  background-color: #1a1c22;
+  text-decoration: none !important;
+}
+/*-------------------------divider-------------------------------------------------*/
+.hr-divider-heading {
+  font-size: 24px !important;
+  color: #cfd2da !important;
+}
+/* --------------------------media queries for everything--------------------------------- */
+
+@media (max-width: 768px) {
+  #introduction .container h2 {
+    font-size: 65px;
+  }
+  #introduction .container .intro-des {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  #introduction .container {
+    height: 368px;
+  }
+  #introduction .container h2 {
+    font-size: 50px;
+  }
+  #introduction .container .intro-des {
+    font-size: 22px;
+  }
+  #introduction .inner-intro {
+    padding-top: 150px;
+  }
+  #introduction .btn {
+    padding: 6px !important;
+    font-size: 13px !important;
+  }
+  #introduction {
+    border-radius: 0 0 70% 70% / 0 0 20% 20%;
+  }
+}
+
+@media (max-width: 425px) {
+  #introduction .container {
+    height: 320px;
+  }
+  #introduction .btn {
+    padding: 4px !important;
+    font-size: 12px !important;
+  }
+  #introduction .inner-intro {
+    padding-top: 120px;
+  }
+  #introduction .container h2 {
+    font-size: 43px;
+  }
+  #introduction .container .intro-des {
+    font-size: 20px;
+  }
+  #introduction {
+    border-radius: 0 0 70% 70% / 0 0 10% 10%;
+  }
+  .nav-container {
+    padding: 10px !important;
+  }
+}
+@media (max-width: 375px) {
+  #introduction .container h2 {
+    font-size: 30px;
+  }
+  #introduction .container .intro-des {
+    font-size: 18px;
+  }
+  #introduction .container {
+    height: 300px;
+  }
+  #introduction .inner-intro {
+    padding-top: 120px;
+  }
+  body {
+    font-size: 16px;
+  }
+  .hr-divider-heading {
+    font-size: 22px !important;
+  }
+  #introduction {
+    background-size: cover;
+  }
+  .nav-container {
+    padding: 7px !important;
+  }
+  .work-item {
+    height: 410px;
+  }
+  .wrok-p {
+    font-size: 16px;
+    opacity: 0;
+  }
+}
+@media (max-width: 320px) {
+  .work-item {
+    height: 382px;
+  }
+}
+/*------------------------ back to top button -------------------------------*/
+.back-to-top {
+  display: block;
+  cursor: pointer;
+  color: #1997c6 !important;
+}
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
